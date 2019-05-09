@@ -6,7 +6,7 @@ ava('standard', (test): void => {
 });
 
 ava('values', (test): void => {
-	test.is(italic `test ${1+1}!`, '*test 2!*');
+	test.is(italic `test ${1 + 1}!`, '*test 2!*');
 });
 
 ava('substring', (test): void => {

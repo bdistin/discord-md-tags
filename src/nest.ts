@@ -10,5 +10,5 @@ import underline from './underline';
 type format = typeof bold | typeof code | typeof codeblock | typeof italic | typeof spoiler | typeof strikethrough | typeof underline;
 
 export default function nest(text: string, ...formats: format[]): string {
-    return formats.length ? nest(formats.shift() `${text}`, ...formats) : text;
+	return formats.length ? nest(formats.shift() `${text}`, ...formats) : text;
 }

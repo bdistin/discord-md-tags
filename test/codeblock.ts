@@ -6,7 +6,7 @@ ava('standard', (test): void => {
 });
 
 ava('values', (test): void => {
-	test.is(codeblock `test ${1+1}!`, '```\ntest 2!```');
+	test.is(codeblock `test ${1 + 1}!`, '```\ntest 2!```');
 });
 
 ava('substring', (test): void => {
@@ -18,7 +18,7 @@ ava('standard w/ type', (test): void => {
 });
 
 ava('values w/ type', (test): void => {
-	test.is(codeblock('js') `test ${1+4}!`, '```js\ntest 5!```');
+	test.is(codeblock('js') `test ${1 + 4}!`, '```js\ntest 5!```');
 });
 
 ava('substring w/ type', (test): void => {

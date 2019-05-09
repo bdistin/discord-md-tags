@@ -6,7 +6,7 @@ ava('standard', (test): void => {
 });
 
 ava('values', (test): void => {
-	test.is(underline `test ${1+1}!`, '__test 2!__');
+	test.is(underline `test ${1 + 1}!`, '__test 2!__');
 });
 
 ava('substring', (test): void => {
