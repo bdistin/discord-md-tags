@@ -1,6 +1,6 @@
 {
   "name": "discord-md-tags",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A collection of tag functions for discord markdown",
   "main": "./dist/index",
   "directories": {
