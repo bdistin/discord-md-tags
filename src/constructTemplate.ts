@@ -1,3 +1,3 @@
 export default function (subStrings: string[], ...values: any[]): string {
-	return subStrings.reduce((prev, cur, i): string => `${prev}${cur}${values[i + 1]}`, values[0]);
+	return values.reduce((prev, cur, i): string => `${prev}${cur}${subStrings[i + 1]}`, subStrings[0]);
 }
