@@ -28,3 +28,16 @@ console.log(codeblock `text`);
 console.log(codeblock('md') `text`);
 // Logs: "```md\ntext```"
 ```
+
+Find the native nesting a bit ugly, find beauty in the included nest util
+```js
+const { bold, italic, nest } = require('discord-md-tags');
+
+// :(
+console.log(bold `${italic `text`}`);
+// Logs: "***text***"
+
+// :)
+console.log(nest('text', bold, italic));
+// Logs: "***text***"
+```
