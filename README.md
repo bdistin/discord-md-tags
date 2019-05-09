@@ -38,6 +38,6 @@ console.log(bold `${italic `text`}`);
 // Logs: "***text***"
 
 // :)
-console.log(nest('text', bold, italic));
+console.log(nest(bold, italic) `text`);
 // Logs: "***text***"
 ```

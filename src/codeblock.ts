@@ -1,6 +1,4 @@
-import constructTemplate from './constructTemplate';
-
-type tagFunction = (subStrings: TemplateStringsArray, ...params: any[]) => string;
+import constructTemplate, { tagFunction } from './constructTemplate';
 
 export default function(type: string): tagFunction;
 export default function(type: TemplateStringsArray, ...args: any[]): string;

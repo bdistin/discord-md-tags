@@ -1,3 +1,4 @@
+import constructTemplate, { tagFunction } from './constructTemplate';
 import bold from './bold';
 import code from './code';
 import codeblock from './codeblock';
@@ -9,6 +10,10 @@ import underline from './underline';
 
 type format = typeof bold | typeof code | typeof codeblock | typeof italic | typeof spoiler | typeof strikethrough | typeof underline;
 
-export default function nest(text: string, ...formats: format[]): string {
-	return formats.length ? nest(formats.shift() `${text}`, ...formats) : text;
+export default function nest(...formats: format[]): tagFunction {
+	return (subStrings: TemplateStringsArray, ...values: any[]): string => {
+		let text = constructTemplate(subStrings, ...values);
+		for (const format of formats) text = format `${text}`;
+		return text;
+	};
 }
