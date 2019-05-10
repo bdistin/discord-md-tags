@@ -1,11 +1,9 @@
 {
   "name": "discord-md-tags",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A collection of tag functions for discord markdown",
-  "main": "./dist/index",
-  "directories": {
-    "test": "test"
-  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "yarn build",
     "test": "yarn build && ava test/*.ts",
