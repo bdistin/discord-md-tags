@@ -1,6 +1,6 @@
 {
   "name": "discord-md-tags",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A collection of tag functions for discord markdown",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

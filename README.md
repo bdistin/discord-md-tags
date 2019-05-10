@@ -29,15 +29,15 @@ console.log(codeblock('md') `text`);
 // Logs: "```md\ntext```"
 ```
 
-Find the native javascript nesting a bit ugly, find beauty in the included `nest` util
+Find the native javascript nesting a bit ugly? Find beauty by making composite formats with the included `compose` util!
 ```js
-const { bold, italic, nest } = require('discord-md-tags');
+const { bold, italic, compose } = require('discord-md-tags');
 
 // :(
 console.log(bold `${italic `text`}`);
 // Logs: "***text***"
 
 // :)
-console.log(nest(bold, italic) `text`);
+console.log(compose(bold, italic) `text`);
 // Logs: "***text***"
 ```
