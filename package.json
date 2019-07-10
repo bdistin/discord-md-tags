@@ -39,6 +39,10 @@
     "extensions": [
       "ts"
     ],
+    "files": [
+      "test/**/*.ts",
+      "!test/lib"
+    ],
     "require": [
       "ts-node/register"
     ]
