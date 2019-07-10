@@ -6,7 +6,7 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "prepublishOnly": "yarn build",
-    "test": "yarn build && ava test/*.ts",
+    "test": "yarn build && ava",
     "build": "tsc",
     "test:lint": "eslint --ext ts src test",
     "lint": "eslint --fix --ext ts src test"
