@@ -32,7 +32,7 @@
     "eslint": "^5.16.0",
     "eslint-config-klasa": "dirigeants/klasa-lint",
     "ts-node": "^8.6.2",
-    "typescript": "^3.7.4"
+    "typescript": "^3.7.5"
   },
   "ava": {
     "compileEnhancements": false,
