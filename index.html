@@ -1,0 +1,164 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>discord-md-tags</title>
+	<meta name="description" content="Documentation for discord-md-tags">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">discord-md-tags</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>discord-md-tags</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#discord-md-tags" id="discord-md-tags" style="color: inherit; text-decoration: none;">
+					<h1>discord-md-tags</h1>
+				</a>
+				<p>A collection of tag functions for discord markdown</p>
+				<p>These are Tag Functions for use with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates">Tagged Templates</a></p>
+				<p>Usage is simple:</p>
+				<pre><code class="language-js"><span class="hljs-keyword">const</span> { bold, italic } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;discord-md-tags&#x27;</span>);
+
+<span class="hljs-built_in">console</span>.log(bold <span class="hljs-string">`text`</span>);
+<span class="hljs-comment">// Logs: &quot;**text**&quot;</span>
+
+<span class="hljs-built_in">console</span>.log(bold <span class="hljs-string">`bold <span class="hljs-subst">${italic <span class="hljs-string">`bold and italic`</span>}</span>`</span>);
+<span class="hljs-comment">// Logs: &quot;**bold *bold and italic***&quot;</span></code></pre>
+				<p>This works the same for <code>italic</code>, <code>underline</code>, <code>code</code>, <code>spoiler</code>, <code>strikethrough</code>, <code>quote</code>.</p>
+				<p><code>codeblock</code> also works the same, but has a bit more:</p>
+				<pre><code class="language-js"><span class="hljs-keyword">const</span> { codeblock } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;discord-md-tags&#x27;</span>);
+
+<span class="hljs-built_in">console</span>.log(codeblock <span class="hljs-string">`text`</span>);
+<span class="hljs-comment">// Logs: &quot;```\ntext```&quot;</span>
+
+<span class="hljs-built_in">console</span>.log(codeblock(<span class="hljs-string">&#x27;md&#x27;</span>) <span class="hljs-string">`text`</span>);
+<span class="hljs-comment">// Logs: &quot;```md\ntext```&quot;</span></code></pre>
+				<p>Find the native javascript nesting a bit ugly? Find beauty by making composite formats with the included <code>compose</code> util!</p>
+				<pre><code class="language-js"><span class="hljs-keyword">const</span> { bold, italic, compose } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;discord-md-tags&#x27;</span>);
+
+<span class="hljs-comment">// :(</span>
+<span class="hljs-built_in">console</span>.log(bold <span class="hljs-string">`<span class="hljs-subst">${italic <span class="hljs-string">`text`</span>}</span>`</span>);
+<span class="hljs-comment">// Logs: &quot;***text***&quot;</span>
+
+<span class="hljs-comment">// :)</span>
+<span class="hljs-built_in">console</span>.log(compose(bold, italic) <span class="hljs-string">`text`</span>);
+<span class="hljs-comment">// Logs: &quot;***text***&quot;</span></code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#format" class="tsd-kind-icon">format</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#tagfunction" class="tsd-kind-icon">tag<wbr>Function</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#bold" class="tsd-kind-icon">bold</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#code" class="tsd-kind-icon">code</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#codeblock" class="tsd-kind-icon">codeblock</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#compose" class="tsd-kind-icon">compose</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#constructtemplate" class="tsd-kind-icon">construct<wbr>Template</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#italic" class="tsd-kind-icon">italic</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#quote" class="tsd-kind-icon">quote</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#spoiler" class="tsd-kind-icon">spoiler</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#strikethrough" class="tsd-kind-icon">strikethrough</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#underline" class="tsd-kind-icon">underline</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
