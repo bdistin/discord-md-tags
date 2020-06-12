@@ -13,7 +13,7 @@
     "coverage": "npx nyc --require source-map-support/register npm test",
     "coverage:report": "npx nyc report --reporter=html",
     "lint": "eslint --fix --ext ts src test",
-    "docs": "typedoc"
+    "docs": "typedoc --excludeNotExported --mode file --out ./dist/ ./src/"
   },
   "repository": {
     "type": "git",

@@ -7,8 +7,9 @@ import type { italic } from './italic';
 import type { spoiler } from './spoiler';
 import type { strikethrough } from './strikethrough';
 import type { underline } from './underline';
+import type { quote } from './quote';
 
-type format = typeof bold | typeof code | typeof codeblock | typeof italic | typeof spoiler | typeof strikethrough | typeof underline;
+type format = typeof bold | typeof code | typeof codeblock | typeof italic | typeof spoiler | typeof strikethrough | typeof underline | typeof quote;
 
 /**
  * Creates a composite format (Order Matters)

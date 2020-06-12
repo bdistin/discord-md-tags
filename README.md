@@ -15,7 +15,7 @@ console.log(bold `bold ${italic `bold and italic`}`);
 // Logs: "**bold *bold and italic***"
 ```
 
-This works the same for `italic`, `underline`, `code`, `spoiler`, `strikethrough`.
+This works the same for `italic`, `underline`, `code`, `spoiler`, `strikethrough`, `quote`.
 
 `codeblock` also works the same, but has a bit more:
 

@@ -6,4 +6,5 @@ export * from './italic';
 export * from './spoiler';
 export * from './strikethrough';
 export * from './underline';
+export * from './quote';
 export * from './constructTemplate';
