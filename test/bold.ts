@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { bold } from '../dist';
+import { bold } from '../src';
 
 ava('standard', (test): void => {
 	test.is(bold `test`, '**test**');

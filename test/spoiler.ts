@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { spoiler } from '../dist';
+import { spoiler } from '../src';
 
 ava('standard', (test): void => {
 	test.is(spoiler `test`, '||test||');

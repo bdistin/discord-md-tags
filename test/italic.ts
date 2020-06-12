@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { italic } from '../dist';
+import { italic } from '../src';
 
 ava('standard', (test): void => {
 	test.is(italic `test`, '*test*');

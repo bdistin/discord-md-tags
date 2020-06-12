@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { bold, italic, strikethrough, codeblock, underline, compose } from '../dist';
+import { bold, italic, strikethrough, codeblock, underline, compose } from '../src';
 
 ava('bold italic', (test): void => {
 	test.is(compose(bold, italic) `test`, '***test***');

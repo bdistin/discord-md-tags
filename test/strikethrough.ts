@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { strikethrough } from '../dist';
+import { strikethrough } from '../src';
 
 ava('standard', (test): void => {
 	test.is(strikethrough `test`, '~~test~~');

@@ -7,10 +7,11 @@
 		"noUnusedParameters": true,
 		"outDir": "./dist",
 		"sourceMap": true,
-        "declaration": true,
-        "noUnusedLocals": true,
-        "removeComments": false,
-        "target": "esnext"
+		"declaration": true,
+		"noUnusedLocals": true,
+		"removeComments": false,
+		"importsNotUsedAsValues": "error",
+		"target": "es2019"
 	},
 	"exclude": [
 		"node_modules",
@@ -19,6 +20,7 @@
 		"scripts"
 	],
 	"include": [
-		"./src/**/*"
+		"./src/**/*",
+		"./test/**/*"
 	]
 }

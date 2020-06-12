@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { codeblock } from '../dist';
+import { codeblock } from '../src';
 
 ava('standard', (test): void => {
 	test.is(codeblock `test`, '```\ntest```');
