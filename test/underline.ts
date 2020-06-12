@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { underline } from '../dist';
+import { underline } from '../src';
 
 ava('standard', (test): void => {
 	test.is(underline `test`, '__test__');

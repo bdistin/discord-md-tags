@@ -1,5 +1,5 @@
 import ava from 'ava';
-import { code } from '../dist';
+import { code } from '../src';
 
 ava('standard', (test): void => {
 	test.is(code `test`, '`test`');

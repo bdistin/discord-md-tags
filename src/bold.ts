@@ -1,4 +1,4 @@
-import constructTemplate from './constructTemplate';
+import { constructTemplate } from './constructTemplate';
 
 /**
  * Adds bold markdown to the tagged template
@@ -10,6 +10,6 @@ import constructTemplate from './constructTemplate';
  * @param subStrings The template strings array
  * @param args The values passed in the ${}s
  */
-export default function bold(subStrings: TemplateStringsArray, ...args: any[]): string {
+export function bold(subStrings: TemplateStringsArray, ...args: any[]): string {
 	return `**${constructTemplate(subStrings, ...args)}**`;
 }
