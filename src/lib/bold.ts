@@ -1,4 +1,4 @@
-import { constructTemplate } from './constructTemplate';
+import { constructTemplate } from '../util/constructTemplate';
 
 /**
  * Adds bold markdown to the tagged template
