@@ -1,4 +1,4 @@
-import { constructTemplate, tagFunction } from './constructTemplate';
+import { constructTemplate, tagFunction } from '../util/constructTemplate';
 
 /**
  * Adds codeblock markdown to the tagged template

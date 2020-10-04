@@ -1,4 +1,4 @@
-import { constructTemplate } from './constructTemplate';
+import { constructTemplate } from '../util/constructTemplate';
 
 /**
  * Adds italic markdown to the tagged template

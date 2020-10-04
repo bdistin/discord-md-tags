@@ -1,13 +1,13 @@
 import { constructTemplate, tagFunction } from './constructTemplate';
 
-import type { bold } from './bold';
-import type { code } from './code';
-import type { codeblock } from './codeblock';
-import type { italic } from './italic';
-import type { spoiler } from './spoiler';
-import type { strikethrough } from './strikethrough';
-import type { underline } from './underline';
-import type { quote } from './quote';
+import type { bold } from '../lib/bold';
+import type { code } from '../lib/code';
+import type { codeblock } from '../lib/codeblock';
+import type { italic } from '../lib/italic';
+import type { spoiler } from '../lib/spoiler';
+import type { strikethrough } from '../lib/strikethrough';
+import type { underline } from '../lib/underline';
+import type { quote } from '../lib/quote';
 
 type format = typeof bold | typeof code | typeof codeblock | typeof italic | typeof spoiler | typeof strikethrough | typeof underline | typeof quote;
 
