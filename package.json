@@ -32,7 +32,7 @@
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@typescript-eslint/eslint-plugin": "4.25.0",
-    "@typescript-eslint/parser": "2.34.0",
+    "@typescript-eslint/parser": "5.26.0",
     "ava": "^3.15.0",
     "eslint": "^6.8.0",
     "eslint-config-klasa": "dirigeants/klasa-lint",
